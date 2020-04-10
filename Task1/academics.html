@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	
+	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<title>Ishika Agarwal</title>
+</head>
+<body>
+	<div class="navbar">
+		<a href="index.html">About</a>
+		<a class="active" href="#">Academics</a>
+		<a href="contact.html">Contact Me</a>
+	</div>
+	<div class="main">
+		<h2>Academic Information</h2>
+		<button class="accordion">10th Grade</button>
+		<div class="panel">
+			<p>I completed my tenth grade board exams from Vidya Valley School with a percentage of 96%. Vidya Valley is an ICSE board school located in Sus Gaon, Pune. I passed out of this school in the year 2017 after completing my tenth grade.</p>
+		</div>
+
+		<button class="accordion">12th Grade</button>
+		<div class="panel">
+			<p>I completed my twelfth grade board exams from Akshara International Schhol with a percentage of 90% in the science stream. Akshara International School (or AIS) is a CBSE school located in Wakad, Pune. I studied for my 11th and 12th grade in this school and passed out in 2019.</p>
+		</div>
+
+		<button class="accordion">I Semester, College</button>
+		<div class="panel">
+			<p>In the B.Tech Program of Manipal Institute of Technology, Manipal, I scored a grade point average of 8.32 in my first semester in 2019. I am in the computer and communication branch of this college.</p>
+		</div>
+		<table>
+			<caption>
+				<h2 style="color: #00004e;">At a Glance</h2>
+			</caption>
+			<tr>
+				<th>Education Level</th>
+				<th>Institution</th>
+				<th>Grade</th>
+				<th>Year of Passing</th>
+			</tr>
+			<tr>
+				<td>10th grade</td>
+				<td>Vidya Valley School, Pune</td>
+				<td>96%</td>
+				<td>2017</td>
+			</tr>
+			<tr>
+				<td>12th grade</td>
+				<td>Akshara International School, Pune</td>
+				<td>90%</td>
+				<td>2019</td>
+			</tr>
+			<tr>
+				<td>I sem, B.Tech</td>
+				<td>Manipal Institute of Technology, Manipal</td>
+				<td>8.32</td>
+				<td>2019</td>
+			</tr>
+		</table>
+	</div>
+	<div class="footer">
+		<p>Designed by Ishika</p>
+	</div>
+	
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("accActive");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+</body>
+</html>
+	
